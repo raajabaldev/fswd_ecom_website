@@ -23,9 +23,14 @@ export default function CartDrawer() {
         clearCart
     } = useCart()
 
+    const [showDetailsForm, setShowDetailsForm] = useState(false)
     const [showPayment, setShowPayment] = useState(false)
     const [paymentSuccess, setPaymentSuccess] = useState(false)
     const [showQR, setShowQR] = useState(false)
+
+    const [customerName, setCustomerName] = useState('')
+    const [customerAddress, setCustomerAddress] = useState('')
+    const [customerPhone, setCustomerPhone] = useState('')
 
     const subtotal = items.reduce((sum, item) => {
         const price = parseFloat(item.price.replace(/[^0-9.]/g, ''))
@@ -284,16 +289,16 @@ export default function CartDrawer() {
                             </span>
 
                             <span className="font-serif-display text-xl text-charcoal font-light">
-                                ${subtotal.toFixed(2)}
+                                ₹{subtotal.toFixed(2)}
                             </span>
                         </div>
 
                         <p className="section-label text-muted text-center">
-                            Complimentary shipping on orders over $150
+                            Complimentary shipping on orders over ₹150
                         </p>
 
                         <button
-                            onClick={() => setShowPayment(true)}
+                            onClick={() => setShowDetailsForm(true)}
                             className="btn-luxury btn-dark w-full justify-center flex items-center gap-3"
                         >
                             Proceed to Checkout
@@ -306,6 +311,85 @@ export default function CartDrawer() {
                     </div>
                 )}
             </motion.div>
+
+            {/* Customer Details Popup */}
+            {showDetailsForm && (
+                <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[100]">
+                    <div className="bg-white rounded-3xl p-8 w-[90%] max-w-sm shadow-2xl">
+
+                        <h2 className="text-3xl font-light mb-6 text-center">
+                            Delivery Details
+                        </h2>
+
+                        <div className="space-y-4">
+
+                            <input
+                                type="text"
+                                placeholder="Full Name"
+                                value={customerName}
+                                onChange={(e) =>
+                                    setCustomerName(e.target.value)
+                                }
+                                className="w-full border p-3 rounded-xl outline-none"
+                            />
+
+                            <input
+                                type="text"
+                                placeholder="Address"
+                                value={customerAddress}
+                                onChange={(e) =>
+                                    setCustomerAddress(e.target.value)
+                                }
+                                className="w-full border p-3 rounded-xl outline-none"
+                            />
+
+                            <input
+                                type="text"
+                                placeholder="Phone Number"
+                                value={customerPhone}
+                                onChange={(e) =>
+                                    setCustomerPhone(e.target.value)
+                                }
+                                className="w-full border p-3 rounded-xl outline-none"
+                            />
+
+                            <button
+                                onClick={() => {
+
+                                    const orderDetails = {
+                                        name: customerName,
+                                        address: customerAddress,
+                                        phone: customerPhone,
+                                        items,
+                                        total: subtotal
+                                    }
+
+                                    localStorage.setItem(
+                                        'latestOrder',
+                                        JSON.stringify(orderDetails)
+                                    )
+
+                                    setShowDetailsForm(false)
+                                    setShowPayment(true)
+                                }}
+                                className="w-full bg-black text-white py-3 rounded-xl"
+                            >
+                                Continue to Payment
+                            </button>
+
+                            <button
+                                onClick={() =>
+                                    setShowDetailsForm(false)
+                                }
+                                className="w-full text-sm text-gray-500"
+                            >
+                                Cancel
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            )}
 
             {/* Payment Popup */}
             {showPayment && (
@@ -417,6 +501,10 @@ export default function CartDrawer() {
                                         setShowPayment(false)
                                         setPaymentSuccess(false)
                                         setShowQR(false)
+
+                                        setCustomerName('')
+                                        setCustomerAddress('')
+                                        setCustomerPhone('')
                                     }}
                                     className="bg-black text-white px-6 py-3 rounded-xl"
                                 >
