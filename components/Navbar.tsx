@@ -30,8 +30,8 @@ export default function Navbar() {
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 1.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'glass-dark py-3' : 'py-6 bg-transparent'
-                    }`}
+                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'glass-dark py-3' : 'py-6 bg-black/30 backdrop-blur-md'
+}`}
             >
                 <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                     {/* Left Nav */}
