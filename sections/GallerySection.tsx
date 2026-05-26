@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Instagram, Heart, MessageCircle } from 'lucide-react'
 
 const galleryItems = [
-    { id: 1, image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=600&fit=crop&q=90', likes: '4.2K', comments: '128' },
+    //{ id: 1, image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=600&fit=crop&q=90', likes: '4.2K', comments: '128' },
     { id: 2, image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=600&h=600&fit=crop&q=90', likes: '6.8K', comments: '234' },
     { id: 3, image: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=600&h=600&fit=crop&q=90', likes: '3.1K', comments: '89' },
     { id: 4, image: 'https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=600&h=600&fit=crop&q=90', likes: '8.9K', comments: '301' },
