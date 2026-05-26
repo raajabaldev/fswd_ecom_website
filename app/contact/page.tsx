@@ -62,7 +62,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.55rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: '#8E8E93' }}>Phone</p>
-                                    <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", color: '#1C1C1E', fontSize: '1.05rem', fontWeight: 300, marginTop: '2px' }}>+1 (800) EABHAA-1</p>
+                                    <p style={{ fontFamily: "'Cormorant Garamond', Georgia, serif", color: '#1C1C1E', fontSize: '1.05rem', fontWeight: 300, marginTop: '2px' }}>+91 98765 43210 EABHAA-1</p>
                                 </div>
                             </div>
                         </div>
