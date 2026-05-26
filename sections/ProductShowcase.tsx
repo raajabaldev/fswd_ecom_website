@@ -6,11 +6,11 @@ import { useCart } from '@/components/CartContext'
 
 const product = {
     id: 101,
-    name: 'Lumière Élixir Serum',
+    name: 'VITAMIN C SERUM',
     subtitle: 'Radiance & Renewal Complex',
-    price: '$285',
-    description: 'A concentrated luxury serum infused with rare Damascena rose extract, 24K gold particles, and peptide complex. Visibly transforms skin luminosity in 14 days.',
-    notes: ['Damascena Rose Extract', '24K Gold Particles', 'Peptide Complex', 'Hyaluronic Acid'],
+    price: '₹385',
+    description: 'A concentrated luxury serum infused with goodness of vitamin C. Visibly transforms skin luminosity in 14 days.',
+    notes: ['Cruelty Free', 'Vegan', 'Paraben Free', 'Hyaluronic Acid'],
     rating: 4.9,
     reviews: 1240,
 }
@@ -26,7 +26,7 @@ export default function ProductShowcase() {
                 id: product.id,
                 name: product.name,
                 price: product.price,
-                image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=200&h=240&fit=crop&q=80',
+                image: "/images/post8.webp",
             })
         }
         setAddedFlash(true)
@@ -77,7 +77,7 @@ export default function ProductShowcase() {
                             <div style={{
                                 width: '100%',
                                 paddingBottom: '120%',
-                                backgroundImage: 'url(https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&h=960&fit=crop&q=95)',
+                                backgroundImage: 'url(/images/post8.webp)',
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }} />
