@@ -8,18 +8,18 @@ export const metadata: Metadata = {
 }
 
 const products = [
-    { id: 1, category: 'Skincare', name: 'Lumière Élixir Serum', subtitle: 'Radiance & Renewal Complex', price: '$285', rating: 4.9, reviews: 1240, badge: 'Bestseller', image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500&h=600&fit=crop&q=90' },
-    { id: 2, category: 'Skincare', name: 'Velvet Moisture Crème', subtitle: 'Deep Hydration Formula', price: '$195', rating: 4.8, reviews: 876, badge: 'New', image: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=500&h=600&fit=crop&q=90' },
-    { id: 3, category: 'Skincare', name: 'Rose Infusion Toner', subtitle: 'Damascena Rose Extract', price: '$120', rating: 4.7, reviews: 543, badge: null, image: 'https://images.unsplash.com/photo-1601049676869-702ea24cfd58?w=500&h=600&fit=crop&q=90' },
-    { id: 4, category: 'Makeup', name: 'Velvet Lip Elixir', subtitle: 'Satin Finish · 18 Shades', price: '$85', rating: 4.9, reviews: 2100, badge: 'Bestseller', image: 'https://images.unsplash.com/photo-1586495777744-4e6232bf2171?w=500&h=600&fit=crop&q=90' },
-    { id: 5, category: 'Makeup', name: 'Glow Arcane Highlighter', subtitle: 'Champagne Gold Pigment', price: '$95', rating: 4.8, reviews: 687, badge: null, image: 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=500&h=600&fit=crop&q=90' },
-    { id: 6, category: 'Makeup', name: 'Silk Foundation Fluid', subtitle: 'Weightless Coverage · 30 Shades', price: '$135', rating: 4.7, reviews: 924, badge: 'New', image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=500&h=600&fit=crop&q=90' },
-    { id: 7, category: 'Fragrances', name: 'Oud & Amber Parfum', subtitle: 'Oriental Woody · 50ml', price: '$320', rating: 5.0, reviews: 312, badge: 'Limited', image: 'https://images.unsplash.com/photo-1541643600914-78b084683702?w=500&h=600&fit=crop&q=90' },
-    { id: 8, category: 'Fragrances', name: 'White Rose Eau de Parfum', subtitle: 'Floral Elegant · 100ml', price: '$245', rating: 4.9, reviews: 489, badge: null, image: 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=500&h=600&fit=crop&q=90' },
-    { id: 9, category: 'Body', name: 'Gold Body Silk Oil', subtitle: '24K Infused · Dry Body Oil', price: '$165', rating: 4.8, reviews: 731, badge: 'Bestseller', image: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&h=600&fit=crop&q=90' },
-    { id: 10, category: 'Body', name: 'Cashmere Body Butter', subtitle: 'Ultra-Rich Moisturiser', price: '$110', rating: 4.7, reviews: 562, badge: null, image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500&h=600&fit=crop&q=90' },
-    { id: 11, category: 'Skincare', name: 'Pearl Eye Contour', subtitle: 'Anti-Ageing Eye Cream', price: '$185', rating: 4.8, reviews: 423, badge: null, image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500&h=600&fit=crop&q=90' },
-    { id: 12, category: 'Body', name: 'Exfoliation Ritual Scrub', subtitle: 'Walnut & Honey Blend', price: '$95', rating: 4.6, reviews: 318, badge: 'New', image: 'https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=500&h=600&fit=crop&q=90' },
+    { id: 1, category: 'Skincare', name: 'Vitamin C Serum', subtitle: 'Radiance & Renewal Complex', price: '₹350', rating: 4.9, reviews: 1240, badge: 'Bestseller', image: "/images/post8.webp" },
+    { id: 2, category: 'Skincare', name: 'Hair Growth Serum', subtitle: 'Helps Generate New Hair Follicles', price: '₹499', rating: 4.8, reviews: 876, badge: 'New', image: "/images/post9.webp" },
+    { id: 3, category: 'Skincare', name: 'Glutathione Face Cream', subtitle: 'Glutathione Face Cream', price: '₹420', rating: 4.7, reviews: 543, badge: null, image: "/images/post10.webp" },
+    { id: 4, category: 'Makeup', name: 'Glutathione 3D Glow Serum', subtitle: 'Satin Finish ', price: '₹585', rating: 4.9, reviews: 2100, badge: 'Bestseller', image: "/images/post11.webp" },
+    { id: 5, category: 'Makeup', name: 'Under Eye Gel', subtitle: 'To help Soothe those pretty eyes', price: '$95', rating: 4.8, reviews: 687, badge: null, image: "/images/post12.webp" },
+    { id: 6, category: 'Makeup', name: 'Moisturiser', subtitle: 'Soft Touch', price: '₹135', rating: 4.7, reviews: 924, badge: 'New', image: "/images/6w.webp" },
+    { id: 7, category: 'Fragrances', name: 'Glutathione Facewash', subtitle: 'Radiant Glow', price: '₹320', rating: 5.0, reviews: 312, badge: 'Limited', image: "/images/post14w.webp" },
+    { id: 8, category: 'Fragrances', name: 'Sunscreen', subtitle: 'SPF 50+++ · 100ml', price: '$245', rating: 4.9, reviews: 489, badge: null, image: "/images/post7w.webp" },
+    // { id: 9, category: 'Body', name: 'Gold Body Silk Oil', subtitle: '24K Infused · Dry Body Oil', price: '$165', rating: 4.8, reviews: 731, badge: 'Bestseller', image: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&h=600&fit=crop&q=90' },
+    // { id: 10, category: 'Body', name: 'Cashmere Body Butter', subtitle: 'Ultra-Rich Moisturiser', price: '$110', rating: 4.7, reviews: 562, badge: null, image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=500&h=600&fit=crop&q=90' },
+    // { id: 11, category: 'Skincare', name: 'Pearl Eye Contour', subtitle: 'Anti-Ageing Eye Cream', price: '$185', rating: 4.8, reviews: 423, badge: null, image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500&h=600&fit=crop&q=90' },
+    // { id: 12, category: 'Body', name: 'Exfoliation Ritual Scrub', subtitle: 'Walnut & Honey Blend', price: '$95', rating: 4.6, reviews: 318, badge: 'New', image: 'https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=500&h=600&fit=crop&q=90' },
 ]
 
 const categories = ['All', 'Skincare', 'Makeup', 'Fragrances', 'Body']
