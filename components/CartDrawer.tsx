@@ -264,7 +264,7 @@ export default function CartDrawer() {
                                                         marginTop: '6px'
                                                     }}
                                                 >
-                                                    ${lineTotal}
+                                                    ₹{lineTotal}
                                                 </p>
                                             </div>
                                         </motion.div>
